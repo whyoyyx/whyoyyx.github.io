@@ -1,0 +1,163 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:  whyoyyx
+subtitle: 故事还长，别失望！
+name: whyoyyx
+encoding: "utf-8"
+favicon: favicon.png 
+
+repository: whyoyyx/whyoyyx.github.io
+github_url: https://github.com/whyoyyx
+url: http://whyoyyx.tech
+enforce_ssl: whyoyyx.tech
+
+## Gem
+plugins:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+  - jekyll-octicons
+  
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+  syntax_highlighter: rouge
+
+syntax_highlighter_opts:
+   coderay_line_numbers:  nil
+
+# Pagination
+paginate: 8
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+# 首页导航栏
+navs:
+
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /rocketmq.html
+    label: 文章列表
+
+  -
+    href: /jvm.html
+    label: 归档文件
+
+  -
+    href: /link.html
+    label: 友情链接
+
+  -
+    href: /about.html
+    label: 关于我
+
+
+# labels. my blog key words
+# 正文whyoyyx下方展示的内容
+labels:
+  -
+    href: /concurrent.html
+    name: 高并发、锁
+
+  -
+    href: /linux.html
+    name: Linux
+
+  -
+    href: /redis.html
+    name: Redis
+
+  -
+    href: /open-source.html
+    name: Code
+
+# selected articles
+# 右侧列表
+classes:
+
+  -
+    href: /thought.html
+    name: JAVA
+    describe: aaaaaaaaaaa
+
+  -
+    href: /interview.html
+    name: SCALA
+    describe: bbbbbbbbbb
+
+  -
+    href: /practice.html
+    name: 333333333
+    describe: ccccccccc
+
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 6 # Number of repos to show
+
+# Google Analytics
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
+
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: whyoyyx
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: whyoyyx
+    repo: blog-comments
+    oauth:
+        client_id: 1403a3f538ea8ffc9f73
+        client_secret: ddc9f2c994ce65811a63557ce5d8bac6deb3012e
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: whyoyyx
+    repo: blog-comments
+    clientID: 1403a3f538ea8ffc9f73
+    clientSecret: https://github.com/gitalk/gitalk#install
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true

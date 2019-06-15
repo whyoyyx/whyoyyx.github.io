@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <title> MongoDB - 匠心零度博客 </title>
+    <meta name="keywords" content="MongoDB,MongoDB 集群,部署,搭建,MongoDB 教程">
+    <meta name="description"
+          content="My Websit">
+
+    <link rel="canonical" href="http://0.0.0.0:4000/mongodb">
+    <link rel="alternate" type="application/rss+xml" title="whyoyyx" href="http://0.0.0.0:4000/feed.xml">
+
+    <!-- Third-Party CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/hover.css/2.0.1/css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
+    <link href="https://cdn.bootcss.com/octicons/4.4.0/font/octicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/assets/css/common.css">
+
+    <!-- CSS set in page -->
+    
+    <link rel="stylesheet" href="/assets/css/blog-page.css">
+    
+
+    <!-- CSS set in layout -->
+    
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+    <div class="container">
+        <a id="site-header-brand" href="/" title="whyoyyx">
+            <span class="octicon octicon-ruby"></span>
+            whyoyyx
+        </a>
+        <nav class="site-header-nav" role="navigation">
+            
+            <a href="/"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="首页">
+                首页
+            </a>
+            
+            <a href="/rocketmq.html"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="文章列表">
+                文章列表
+            </a>
+            
+            <a href="/jvm.html"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="归档文件">
+                归档文件
+            </a>
+            
+            <a href="/link.html"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="友情链接">
+                友情链接
+            </a>
+            
+            <a href="/about.html"
+               class=" site-header-nav-item hvr-underline-from-center"
+               target=""
+               title="关于我">
+                关于我
+            </a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <section class="jumbotron geopattern" data-pattern-id="MongoDB 系列文章">
+    <div class="container">
+        <div id="jumbotron-meta-info">        
+            <h1>MongoDB 系列文章</h1>
+            <span class="meta-info">
+                
+                    <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; MongoDB 系列教程
+                
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+
+<article class="post container">
+
+    <div class="row">
+
+    <div class="col-md-12">
+
+        <ul id="posts-list">
+            
+                
+            
+                
+            
+        </ul> 
+
+        <!-- Pagination -->
+        
+
+
+        <!-- Comments -->
+       <div class="comment">
+         
+
+  
+    <a href="#" class="show_disqus_comment" onclick="return false;">Show Disqus Comments</a>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'http://0.0.0.0:4000/mongodb';
+        this.page.identifier = '/mongodb';
+        this.page.title = 'MongoDB 系列文章';
+    };
+    var disqus_loaded = false;
+    $(function() {
+        $('.show_disqus_comment').on('click', function() { // DON'T EDIT BELOW THIS LINE
+            $(this).html('加载中...');
+            var that = this;
+            if (!disqus_loaded) {
+                var d = document, s = d.createElement('script');
+
+                s.type = 'text/javascript';
+                s.async = true;
+                var shortname = 'whyoyyx';
+
+                s.src = '//' + shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                disqus_loaded = true;
+            }
+            $(that).remove();
+        })
+    })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  
+
+  
+        <div id="gitalk-container"></div>
+        <script src="/assets/js/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: '/mongodb',
+            clientID: '1403a3f538ea8ffc9f73',
+            clientSecret: 'https://github.com/gitalk/gitalk#install',
+            repo: 'blog-comments',
+            owner: 'whyoyyx',
+            admin: ['whyoyyx'],
+            labels: ['gitment'],
+            perPage: 50,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+  
+
+
+       </div>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function(){
+
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+    });
+</script>
+
+
+
+</article>
+
+        </div>
+
+    
+<footer class="container">
+    <div class="site-footer">
+        <!--<div class="site-footer-icons">
+            <a target="_blank" href="https://www.zhihu.com/people/jiangxinlingdu">
+               知乎
+            </a>
+            <a target="_blank" href="http://weibo.com/jiangxinlingdu">
+               微博
+            </a>
+            <a target="_blank" href="https://github.com/jiangxinlingdu">
+                Github
+            </a>
+        </div>-->
+        <div class="site-footer-icons">
+        <span id="busuanzi_container_site_uv">
+          总访客数<span id="busuanzi_value_site_uv"></span>次 &&
+        </span>
+        <span id="busuanzi_container_site_pv">
+            总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+    </div>
+        <div class="site-footer-links mobile-hidden">
+            
+            <a href="/concurrent.html" title="高并发、锁" target="">高并发、锁</a>
+            
+            <a href="/linux.html" title="Linux" target="">Linux</a>
+            
+            <a href="/redis.html" title="Redis" target="">Redis</a>
+            
+            <a href="/open-source.html" title="Code" target="">Code</a>
+            
+        </div>
+          <div class="site-footer-icons">
+              <!-- 京ICP备15067287号-3-->
+        </div>
+        <div class="scrolltop">
+            <a href="javascript:window.scrollTo(0,0)" >TOP</a>
+        </div>
+        <div class="rss"><a href="/feed.xml"><span class="octicon octicon-rss" style="color:orange;"></span></a></div>
+    </div>
+    <!-- Third-Party JS -->
+    <script src="https://cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>    <!-- My JS -->
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+    
+     
+
+     <!-- Cnzz Analytics -->
+       <div style="display:none">
+           <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274371503'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274371503' type='text/javascript'%3E%3C/script%3E"));</script>
+       </div>
+     <!-- Cnzz Analytics -->
+
+</footer>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+current directory: /home/appadmin/Yummy-Jekyll/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/local/rvm/rubies/ruby-2.6.3/bin/ruby -I /usr/local/rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190615-4867-xwpai.rb extconf.rb
+creating Makefile
+
+current directory: /home/appadmin/Yummy-Jekyll/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /home/appadmin/Yummy-Jekyll/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++ [enabled by default]
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++ [enabled by default]
+cc1plus: warning: command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++ [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-cast-function-type" [enabled by default]
+compiling rubymain.cpp
+cc1plus: warning: command line option ‘-Wdeclaration-after-statement’ is valid for C/ObjC but not for C++ [enabled by default]
+cc1plus: warning: command line option ‘-Wimplicit-function-declaration’ is valid for C/ObjC but not for C++ [enabled by default]
+cc1plus: warning: command line option ‘-Wimplicit-int’ is valid for C/ObjC but not for C++ [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1plus: warning: unrecognized command line option "-Wno-cast-function-type" [enabled by default]
+linking shared-object fastfilereaderext.so
+
+current directory: /home/appadmin/Yummy-Jekyll/vendor/cache/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20190615-4867-1nf59st
